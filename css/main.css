@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: #4d4f62;
+  font-size: 1.5rem;
+}
+
+.light {
+  font-weight: 200;
+}
+
+.dark {
+  font-weight: 600;
+}
+
+.main-text {
+  color: #4d4f62;
+  font-size: 0.9375rem;
+  letter-spacing: 1.5;
+  text-align: center;
+}
+
+h2 {
+  color: #4d4f62;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.cardText {
+  color: #4d4f62;
+  font-size: 0.8125rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
