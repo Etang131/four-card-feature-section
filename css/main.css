@@ -7,6 +7,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.heroSection {
+  margin: 8vh 8vw;
+}
+
 h1 {
   color: #4d4f62;
   font-size: 1.5rem;
@@ -23,19 +27,65 @@ h1 {
 .main-text {
   color: #4d4f62;
   font-size: 0.9375rem;
-  letter-spacing: 1.5;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  margin-top: 2vh;
+  opacity: 0.5;
   text-align: center;
 }
 
 h2 {
   color: #4d4f62;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 600;
+}
+
+.benefitsSection {
+  margin: 0 8vw;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+  margin-bottom: 3vh;
+  width: 84vw;
+}
+
+.card > hr {
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  height: 3.55px;
+}
+
+.cardOne > hr {
+  background: #44d3d2;
+}
+
+.cardTwo > hr {
+  background: #ea5454;
+}
+
+.cardThree > hr {
+  background: #fcae4a;
+}
+
+.cardFour > hr {
+  background: #549ef2;
+}
+
+.card > h2 {
+  margin: 5% 10%;
 }
 
 .cardText {
   color: #4d4f62;
   font-size: 0.8125rem;
+  margin: 5% 10%;
+}
+
+.card > img {
+  margin-left: 70%;
+  padding: 15px 0;
 }
 
 .attribution {
