@@ -7,11 +7,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.heroSection {
-  margin: 8vh 8vw;
+.container {
+  max-width: 1440px;
 }
 
-.heroSection > br {
+.heroSection {
+  margin: 8vh 10%;
+}
+
+.main-text > br {
   display: none;
 }
 
@@ -85,6 +89,7 @@ h2 {
   color: #4d4f62;
   font-size: 0.8125rem;
   margin: 5% 10%;
+  text-align: left;
 }
 
 .card > img {
@@ -107,10 +112,6 @@ h2 {
     justify-content: center;
   }
 
-  .heroSection > br {
-    display: block;
-  }
-
   .heroSection > h1,
   p {
     text-align: center;
@@ -123,7 +124,7 @@ h2 {
   }
 
   .card {
-    margin: 0 15%;
+    margin: 3vh auto;
     max-width: 350px;
     width: 80%;
   }
@@ -132,5 +133,9 @@ h2 {
 @media only screen and (min-width: 750px) {
   h1 {
     font-size: 2.25rem;
+  }
+
+  .main-text > br {
+    display: block;
   }
 }
