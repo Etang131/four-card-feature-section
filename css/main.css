@@ -11,6 +11,10 @@ body {
   margin: 8vh 8vw;
 }
 
+.heroSection > br {
+  display: none;
+}
+
 h1 {
   color: #4d4f62;
   font-size: 1.5rem;
@@ -41,7 +45,7 @@ h2 {
 }
 
 .benefitsSection {
-  margin: 0 8vw;
+  margin: 0 10%;
 }
 
 .card {
@@ -49,7 +53,7 @@ h2 {
   box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
   border-radius: 8px;
   margin-bottom: 3vh;
-  width: 84vw;
+  max-width: 311px;
 }
 
 .card > hr {
@@ -94,4 +98,39 @@ h2 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 376px) {
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .heroSection > br {
+    display: block;
+  }
+
+  .heroSection > h1,
+  p {
+    text-align: center;
+  }
+
+  .benefitsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 0 15%;
+    max-width: 350px;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  h1 {
+    font-size: 2.25rem;
+  }
 }
