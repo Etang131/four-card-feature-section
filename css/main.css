@@ -12,7 +12,14 @@ body {
 }
 
 .heroSection {
+  display: flex;
+  flex-direction: column;
   margin: 8vh 10%;
+}
+
+.heroSection > h1,
+p {
+  text-align: center;
 }
 
 .main-text > br {
@@ -49,6 +56,8 @@ h2 {
 }
 
 .benefitsSection {
+  display: flex;
+  flex-direction: column;
   margin: 0 10%;
 }
 
@@ -57,7 +66,9 @@ h2 {
   box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
   border-radius: 8px;
   margin-bottom: 3vh;
-  max-width: 311px;
+  margin: 3vh auto;
+  max-width: 350px;
+  width: 80%;
 }
 
 .card > hr {
@@ -105,30 +116,6 @@ h2 {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 376px) {
-  .heroSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .heroSection > h1,
-  p {
-    text-align: center;
-  }
-
-  .benefitsSection {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card {
-    margin: 3vh auto;
-    max-width: 350px;
-    width: 80%;
-  }
-}
-
 @media only screen and (min-width: 900px) {
   h1 {
     font-size: 2.25rem;
@@ -171,7 +158,13 @@ h2 {
 }
 
 @media only screen and (min-width: 1300px) {
+  .container {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
   .card {
+    margin: 0 1vw;
     width: 350px;
   }
 }
